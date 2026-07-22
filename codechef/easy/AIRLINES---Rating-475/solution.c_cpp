@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y,z;
+	cin>>t;
+	while(t>0){
+	    cin>>x>>y>>z;
+	   // 10x-total
+	   // y<10x-yz
+	   // y>z -xz
+	   if(10*x>y)
+	   cout<<y*z<<"\n";
+	   else
+	   cout<<10*x*z<<"\n";
+	   t--;
+	}
+
+}
