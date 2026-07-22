@@ -79,21 +79,20 @@ Since the response code is not $404$, website returns `FOUND`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-22T18:25:04.549Z  
+**Submitted:** 2026-07-22T18:26:33.974Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-int t,x,n;
-cin>>t;
-while(t>0){
-    cin>>x>>n;
-    cout<<x/10*n<<"\n";
-    t--;
-}
-	
+	// your code goes here
+	int x;
+	cin>>x;
+	if(x==404)
+	cout<<"NOT FOUND";
+	else
+		cout<<"FOUND";
 
 }
 
