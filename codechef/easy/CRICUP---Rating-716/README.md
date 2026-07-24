@@ -51,7 +51,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-24T14:28:14.670Z  
+**Submitted:** 2026-07-24T14:29:37.654Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -63,7 +63,7 @@ int main() {
 	cin>>t;
 	while(t--){
 	    cin>>x>>y>>d;
-	    if(x-y<=d)
+	    if(abs(x-y)<=d)
 	    cout<<"yes\n";
 	    else
 	    cout<<"no\n";
