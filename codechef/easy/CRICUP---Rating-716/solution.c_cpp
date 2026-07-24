@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y,d;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y>>d;
+	    if(x-y<=d)
+	    cout<<"yes\n";
+	    else
+	    cout<<"no\n";
+	}
+
+}
