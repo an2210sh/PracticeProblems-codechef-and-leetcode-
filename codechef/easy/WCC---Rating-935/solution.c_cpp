@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t,x;
+		    int c,n,d;
+	cin>>t;
+	while(t--){
+     int c=0,n=0,d=0;
+	    cin>>x;
+	    char s[14];
+	    for(int i=0;i<14;i++){
+	    cin>>s[i];
+	      if(s[i]=='C')
+	        c++;
+	        else if(s[i]=='N')
+	        n++;
+	        else
+	        d++;
+	    }
+	    c=2*c+d;
+	    n=2*n+d;
+	    if(c>n)
+	    cout<<60*x;
+	    else if(c<n)
+	    cout<<40*x;
+	    else
+	    cout<<55*x;
+	  cout<<endl;  
+	    
+	}
+
+}
