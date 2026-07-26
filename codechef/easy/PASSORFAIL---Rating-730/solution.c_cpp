@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,n,x,p;
+	cin>>t;
+	while(t--){
+	    cin>>n>>x>>p;
+	    if(4*x-n>=p)
+	    cout<<"pass\n";
+	    else
+	    cout<<"fail\n";
+	}
+
+}
