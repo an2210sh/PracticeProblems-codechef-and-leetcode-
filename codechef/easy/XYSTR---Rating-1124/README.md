@@ -57,7 +57,7 @@ Another way to form two pairs is: (second student, third student) and (fourth st
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T13:32:20.606Z  
+**Submitted:** 2026-07-27T13:30:29.554Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
