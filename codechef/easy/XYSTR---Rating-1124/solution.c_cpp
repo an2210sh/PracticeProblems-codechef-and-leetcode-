@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    string s;
+	    cin>>s;
+	    int prev=s[0];
+	    int i=1,m=0;
+	    while(i<s.length()){
+	        if(s[i]!=prev){
+	        m++;
+	        prev=s[i+1];
+	        i+=2;
+	        }
+	        else{
+	            prev=s[i];
+	            i++;
+	        }
+	     } cout<<m<<"\n";
+	 
+	        
+	    
+	}
+
+}
