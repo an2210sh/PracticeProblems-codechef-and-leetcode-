@@ -1,4 +1,4 @@
-# PROINC - Rating 410
+# HOTCOLD - Rating 410
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
 
