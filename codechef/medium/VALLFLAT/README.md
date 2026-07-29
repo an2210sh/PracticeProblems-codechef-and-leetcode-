@@ -65,7 +65,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T16:17:04.427Z  
+**Submitted:** 2026-07-29T16:23:37.035Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,9 +81,12 @@ while(t--){
     int a[n];
     for(int i=0;i<n;i++)
     cin>>a[i];
-    for(int i=1;i<n-1;i+=2){
-        if(a[i]<min(a[i-1]a[i+1]))
+    for(int i=1;i<n;i+=2){
+        if(a[i]<=min(a[i-1],a[i+1])){
         a[i-1]=a[i+1]=a[i];
+        break;
+            
+        }
     }
     int sum=0;
     for(int i=0;i<n;i++)
