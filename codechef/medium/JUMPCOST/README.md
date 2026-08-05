@@ -58,36 +58,51 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T16:18:28.909Z  
+**Submitted:** 2026-08-05T16:18:37.183Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
 
-int main() {
-	// your code goes here
-	int t;
-	cin>>t;
-	while(t--){
-	    int n,bal=0;
-	    cin>>n;
-	    int A[n+1];
-	    for(int i=1;i<=n;i++)
-	    cin>>A[i];
-	    int i=1;
-	    for(int j=2;j<=n;j++) {
-	        if(A[j]>=j-i){
-	            bal+=A[j]-j+i;
-	            i=j;
-	        }
-	       else
-	       continue;
-	    }
-	    cout<<bal<<endl;
-	}
+void solve() {
+    int n;
+    cin >> n;
+    vector<long long> A(n + 1);
+    for (int i = 1; i <= n; i++) {
+        cin >> A[i];
+    }
 
+    long long max_bal = 0;      // Starting balance at index 1 is 0
+    long long pos_sum = 0;      // Running sum of max(0, A[m]) for 2 <= m < J
+
+    for (int j = 2; j <= n; j++) {
+        // Calculate max balance attainable by ending a sequence at index j
+        long long current_bal = A[j] + 1 - j + pos_sum;
+        max_bal = max(max_bal, current_bal);
+
+        // Add A[j] to running positive sum if it contributes positively as an intermediate node
+        if (A[j] > 0) {
+            pos_sum += A[j];
+        }
+    }
+
+    cout << max_bal << "\n";
 }
 
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
 ```
 
 ---
