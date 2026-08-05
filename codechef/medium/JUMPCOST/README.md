@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T16:15:26.429Z  
+**Submitted:** 2026-08-05T16:17:03.734Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -74,7 +74,7 @@ int main() {
 	    int A[n+1];
 	    for(int i=1;i<=n;i++)
 	    cin>>A[i];
-	    int i=0;
+	    int i=1;
 	    for(int j=2;j<=n;j++) {
 	        if(A[j]>=j-i){
 	            bal+=A[j]-j+i;
