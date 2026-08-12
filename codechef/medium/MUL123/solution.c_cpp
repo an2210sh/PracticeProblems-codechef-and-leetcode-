@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,n;
+	cin>>t;
+	while(t--){
+	    cin>>n;
+	    bool check=false;
+	    int s=0;
+	    while(check==0){
+	        if(n%3==2){
+	              n+=1;
+	        check=1;
+	        }
+	        else{
+	      	            n=n/5+1;
+
+	        }
+	     s++;
+	    }
+	    cout<<s<<"\n";
+	    
+	}
+
+}
