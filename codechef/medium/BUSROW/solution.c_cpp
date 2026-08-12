@@ -6,12 +6,14 @@ int main() {
 	int t,n,m,x;
 	cin>>t;
 	while(t--){
+	    int row;
 	    cin>>n>>m>>x;
-	    int row=x/m;
-	    if(n>1)
-	    cout<<min(row,n-row)<<"\n";
+	    if(x%m==0)
+	     row=(x/m);
 	    else
-	    cout<<1<<"\n";
+	    row=x/m+1;
+	    cout<<min(row,n-row)<<"\n";
+	
 	    
 	}
 	
