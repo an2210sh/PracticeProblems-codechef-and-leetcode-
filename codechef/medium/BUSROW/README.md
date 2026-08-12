@@ -74,7 +74,7 @@ It's optimal to enter from the back, and walk through rows $6, 5, 4$ to reach it
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:08:58.119Z  
+**Submitted:** 2026-08-12T16:15:16.886Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -85,12 +85,14 @@ int main() {
 	int t,n,m,x;
 	cin>>t;
 	while(t--){
+	    int row;
 	    cin>>n>>m>>x;
-	    int row=x/m;
-	    if(n>1)
-	    cout<<min(row,n-row)<<"\n";
+	    if(x%m==0)
+	     row=(x/m);
 	    else
-	    cout<<1<<"\n";
+	    row=x/m+1;
+	    cout<<min(row,n-row)<<"\n";
+	
 	    
 	}
 	
