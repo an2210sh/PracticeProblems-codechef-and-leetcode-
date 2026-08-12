@@ -15,7 +15,7 @@ int main() {
 	        check=1;
 	        }
 	        else{
-	      	            n=n/5+1;
+	      	            n=(n/5+1)*5;
 
 	        }
 	     s++;
