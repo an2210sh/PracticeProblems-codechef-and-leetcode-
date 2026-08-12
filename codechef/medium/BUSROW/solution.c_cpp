@@ -12,7 +12,7 @@ int main() {
 	     row=(x/m);
 	    else
 	    row=x/m+1;
-	    cout<<min(row,n-row+1)<<"\n";
+	    cout<<min(row,n-row)<<"\n";
 	
 	    
 	}
