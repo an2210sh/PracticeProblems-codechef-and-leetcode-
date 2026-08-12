@@ -88,7 +88,7 @@ $6$ is even, so the answer is `Yes`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:47:50.416Z  
+**Submitted:** 2026-08-12T15:48:30.757Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -99,9 +99,9 @@ int main() {
 	int l,r;
 	cin>>l>>r;
 	if(l%2==0||l<r)
-	cout<<"No";
-	else
 	cout<<"yes";
+	else
+	cout<<"no";
 }
 
 ```
