@@ -73,7 +73,7 @@ It can be verified that using fewer than two operations is not enough to make $N
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:27:30.259Z  
+**Submitted:** 2026-08-12T16:26:13.253Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -93,7 +93,7 @@ int main() {
 	        check=1;
 	        }
 	        else{
-	      	            n=(n/5+1)*5;
+	      	            n=n/5+1;
 
 	        }
 	     s++;
