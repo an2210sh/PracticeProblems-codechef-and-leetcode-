@@ -5,8 +5,8 @@ int main() {
 	// your code goes here
 	int l,r;
 	cin>>l>>r;
-	if(r==l)
-	cout<<"No";
-	else
+	if(l%2==0||l<r)
 	cout<<"yes";
+	else
+	cout<<"no";
 }
