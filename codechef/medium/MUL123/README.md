@@ -70,12 +70,12 @@ It can be verified that using fewer than two operations is not enough to make $N
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:29:34.024Z  
+**Submitted:** 2026-08-12T16:29:16.261Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
