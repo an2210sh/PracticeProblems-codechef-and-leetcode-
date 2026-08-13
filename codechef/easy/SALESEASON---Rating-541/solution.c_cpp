@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int pay(int n){
+    if(n<=100)
+    return n;
+    else if(n>100 && n<=1000)
+    return n-25;
+    else if(n>1000 && n<=5000)
+    return n-100;
+    else
+    return n-500;
+}
+int main() {
+	// your code goes here
+	int t,x;
+	cin>>t;
+	while(t--){
+	    cin>>x;
+	    cout<<pay(x)<<"\n";
+	    
+	}
+
+}
