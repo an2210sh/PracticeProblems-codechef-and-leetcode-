@@ -70,40 +70,44 @@ It can be verified that using fewer than two operations is not enough to make $N
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:26:17.505Z  
+**Submitted:** 2026-08-12T16:29:34.024Z  
 
-```c_cpp
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
-	int t,n;
-	cin>>t;
-	while(t--){
-	    cin>>n;
-	    bool check=false;
-	    int s=0;
-	    while(check==0){
-	        if(n%3==2){
-	              n+=1;
-	        check=1;
-	        }
-	        else{
-	      	            n=n/5+1;
-
-	        }
-	     s++;
-	    }
-	    cout<<s<<"\n";
-	    
-	}
-
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while(t--) {
+        long long n;
+        cin >> n;
+        
+        long long ops = 0;
+        while(n % 3 != 0) {
+            // If adding 1 makes it divisible by 3, do it (takes 1 operation)
+            if((n + 1) % 3 == 0) {
+                n += 1;
+                ops += 1;
+            }
+            else {
+                // Otherwise, find the nearest multiple of 5 strictly larger than n
+                long long next_mult_5 = ((n / 5) + 1) * 5;
+                ops += (next_mult_5 - n);
+                n = next_mult_5;
+            }
+        }
+        cout << ops << "\n";
+    }
+    return 0;
 }
-
 ```
 
 ---
