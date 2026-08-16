@@ -6,12 +6,10 @@ int main() {
     while(t--){
         int x,y;
         cin>>x>>y;
-        int m=1;
-        while(m*x<y){
-            x=m*x;
-            m++;
-        }
-        cout<<--m<<"\n";
+        if(y%x!=0)
+        cout<<y/x<<"\n";
+        else
+        cout<<y/x-1<<"\n";
     }
     
 
