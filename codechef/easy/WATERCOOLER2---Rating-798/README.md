@@ -51,7 +51,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T11:16:57.146Z  
+**Submitted:** 2026-08-16T11:20:07.572Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -62,12 +62,10 @@ int main() {
     while(t--){
         int x,y;
         cin>>x>>y;
-        int m=1;
-        while(m*x<y){
-            x=m*x;
-            m++;
-        }
-        cout<<--m<<"\n";
+        if(y%x!=0)
+        cout<<y/x<<"\n";
+        else
+        cout<<y/x-1<<"\n";
     }
     
 
