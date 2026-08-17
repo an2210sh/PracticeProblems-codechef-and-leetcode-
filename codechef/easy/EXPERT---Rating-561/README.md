@@ -57,7 +57,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T03:46:02.484Z  
+**Submitted:** 2026-08-17T03:52:04.844Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,10 +70,19 @@ int main() {
 	while(t--){
 	    int x,y;
 	    cin>>x>>y;
+	    if(x%2==0){
 	    if(x/2<=y)
 	    cout<<"yes\n";
-	    else
+	       else
 	    cout<<"no\n";
+	    }
+	    else{
+	        if(x/2+1<=y)
+	        cout<<"yes\n";
+	        else
+	        cout<<"no\n";
+	    }
+	 
 	}
 
 }
