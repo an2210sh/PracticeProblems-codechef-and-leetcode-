@@ -8,10 +8,19 @@ int main() {
 	while(t--){
 	    int x,y;
 	    cin>>x>>y;
+	    if(x%2==0){
 	    if(x/2<=y)
 	    cout<<"yes\n";
-	    else
+	       else
 	    cout<<"no\n";
+	    }
+	    else{
+	        if(x/2+1<=y)
+	        cout<<"yes\n";
+	        else
+	        cout<<"no\n";
+	    }
+	 
 	}
 
 }
