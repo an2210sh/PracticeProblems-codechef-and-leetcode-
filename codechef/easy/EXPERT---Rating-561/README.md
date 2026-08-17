@@ -57,14 +57,12 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T03:52:04.844Z  
+**Submitted:** 2026-08-17T03:52:33.489Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-
 int main() {
-	// your code goes here
 	int t;
 	cin>>t;
 	while(t--){
