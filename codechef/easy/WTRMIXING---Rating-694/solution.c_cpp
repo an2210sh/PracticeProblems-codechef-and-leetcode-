@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+void check(int a,int b,int x, int y){
+    if(a<b)
+    (a+x>=b)?cout<<"YES\n":cout<<"NO\n";
+    else
+    (a-y<=b)?cout<<"yes\n":cout<<"no\n";
+}
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b,x,y;
+	    cin>>a>>b>>x>>y;
+	    check(a,b,x,y);
+	}
+
+}
