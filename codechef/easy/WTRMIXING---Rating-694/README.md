@@ -63,7 +63,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T07:35:52.642Z  
+**Submitted:** 2026-08-18T07:37:08.322Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,7 +82,6 @@ int main() {
 	    cin>>a>>b>>x>>y;
 	    check(a,b,x,y);
 	}
-
 }
 
 ```
