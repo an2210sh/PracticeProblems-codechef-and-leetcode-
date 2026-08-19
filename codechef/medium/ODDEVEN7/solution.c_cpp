@@ -23,7 +23,7 @@ int main() {
 	    e++;
 	    }
 	    cout<<o<<" "<<e<<endl;
-	    if(o+e<n)
+	    if(2*min(o,e<n)
 	    cout<<2*min(o,e)+1;
 	    else
 	    cout<<n;
