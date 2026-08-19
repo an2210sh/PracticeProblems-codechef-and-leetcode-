@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T16:03:11.613Z  
+**Submitted:** 2026-08-19T16:03:46.066Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,7 +73,7 @@ int main() {
 	    int a[n];
 	    for(int i=1;i<=n;i++){
 	    cin>>a[i];
-	    	    ans=i;
+	    ans=i;
 	    if(k-a[i]<0)
 	    break;
 	    else{
@@ -82,7 +82,7 @@ int main() {
 	    }
 
     	}
-       cout<<ans+1<<"\n";
+       cout<<ans<<"\n";
 }
 }
 
