@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:22:44.336Z  
+**Submitted:** 2026-08-19T15:43:55.281Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,7 +82,7 @@ int main() {
 	    e++;
 	    }
 	    cout<<o<<" "<<e<<endl;
-	    if(2*min(o,e<n)
+	    if(2*min(o,e)<n)
 	    cout<<2*min(o,e)+1;
 	    else
 	    cout<<n;
