@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:46:55.132Z  
+**Submitted:** 2026-08-19T15:44:13.298Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -62,10 +62,10 @@ using namespace std;
 bool isOdd(int n){
     if(n%2!=0)
     return 1;
-    else
     return 0;
 }
 int main() {
+	// your code goes here
 	int t;
 	cin>>t;
 	while(t--){
@@ -81,7 +81,7 @@ int main() {
 	    else
 	    e++;
 	    }
-	   // cout<<o<<" "<<e<<endl;
+	    cout<<o<<" "<<e<<endl;
 	    if(2*min(o,e)<n)
 	    cout<<2*min(o,e)+1;
 	    else
