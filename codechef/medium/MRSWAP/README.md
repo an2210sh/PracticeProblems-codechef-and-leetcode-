@@ -56,14 +56,13 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:10:20.207Z  
+**Submitted:** 2026-08-19T15:11:45.192Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
 int t;
 cin>>t;
 while(t--){
@@ -73,7 +72,7 @@ while(t--){
     int a[m];
     for(int i=0;i<m;i++)
     cin>>a[i];
-    for(int i=0;i<=n;i++){
+    for(int i=0;i<=m/2;i++){
         if(a[i]<=a[m-1-i])
         swap(a[i],a[m-1-i]);
     }
