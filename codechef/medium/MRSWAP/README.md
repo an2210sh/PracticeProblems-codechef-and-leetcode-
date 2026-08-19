@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:11:45.192Z  
+**Submitted:** 2026-08-19T15:11:59.859Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,7 @@ while(t--){
     int sum=0;
      for(int i=0;i<n;i++)
      sum+=a[i];
-     cout<<sum+1<<"\n";
+     cout<<sum<<"\n";
     
 }
 }
