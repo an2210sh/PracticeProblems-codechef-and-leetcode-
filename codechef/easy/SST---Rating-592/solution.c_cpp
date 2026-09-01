@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void sharkTank(int a,int b){
+    if(a==b)
+    cout<<"any";
+    if(a>b)
+    cout<<"first";
+    if(a<b)
+    cout<<"second";
+    cout<<"\n";
+}
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b;
+	    cin>>a>>b;
+	    sharkTank(10*a,5*b);
+	    
+	}
+
+}
