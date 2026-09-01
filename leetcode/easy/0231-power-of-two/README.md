@@ -50,8 +50,8 @@ Output: false
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.9 MB (beats 50.51%)  
-**Submitted:** 2026-09-01T19:17:31.121Z  
+**Memory:** 7.9 MB (beats 12.62%)  
+**Submitted:** 2026-09-01T19:20:47.679Z  
 
 ```cpp
 class Solution {
@@ -59,9 +59,7 @@ public:
     bool isPowerOfTwo(int n) {
         if(n==1)
         return true;
-        if(n==0)
-        return false;
-        if(n%2!=0)
+        if(n%2!=0 ||n==0)
         return false;
         return isPowerOfTwo(n/2);
     }
