@@ -77,7 +77,7 @@ Example - Insufficient Funds
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T06:37:27.040Z  
+**Submitted:** 2026-09-07T06:37:55.718Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -89,9 +89,9 @@ int main() {
 	cin>>x>>y;
 	int a=x;
 	if(a%5==0 && x+.5<=y)
-	cout<<fixed<<setprecision(2)<<y-x-0.5;
+	cout<<y-x-0.5;
 	else
-	cout<<fixed<<setprecision(2)<<y;
+	cout<<y;
 }
 
 ```
