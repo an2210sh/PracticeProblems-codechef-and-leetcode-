@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	float x,y;
+	cin>>x>>y;
+	int a=x;
+	if(a%5==0 && x<y)
+	cout<<y-x-0.5;
+	else
+	cout<<y;
+}
