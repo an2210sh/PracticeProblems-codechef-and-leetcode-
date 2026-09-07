@@ -7,7 +7,7 @@ int main() {
 	cin>>x>>y;
 	int a=x;
 	if(a%5==0 && x+.5<=y)
-	cout<<fixed<<setprecision(2)<<y-x-0.5;
+	cout<<y-x-0.5;
 	else
-	cout<<fixed<<setprecision(2)<<y;
+	cout<<y;
 }
