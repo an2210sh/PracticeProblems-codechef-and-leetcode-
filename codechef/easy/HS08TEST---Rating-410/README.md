@@ -77,7 +77,7 @@ Example - Insufficient Funds
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T06:38:22.490Z  
+**Submitted:** 2026-09-07T06:38:14.846Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
