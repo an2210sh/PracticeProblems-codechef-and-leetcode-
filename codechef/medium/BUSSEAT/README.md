@@ -54,7 +54,7 @@ Hence, persons $1$ and $3$ share a row in this instance, so there are $2$ people
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:25:26.417Z  
+**Submitted:** 2026-09-16T15:39:03.822Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
