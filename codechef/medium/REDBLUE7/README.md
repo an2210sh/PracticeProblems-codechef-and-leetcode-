@@ -56,18 +56,47 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:39:37.196Z  
+**Submitted:** 2026-09-16T15:40:47.890Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-
-int main() {
-	// your code goes here
-	
-
+void solve() {
+    int n;
+    cin >> n;
+    vector<long long> a(n);
+    long long total_sum = 0;
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+        total_sum += a[i];
+    }
+    sort(a.begin(), a.end());
+    vector<long long> pref(n + 1, 0);
+    for (int i = 0; i < n; ++i) {
+        pref[i + 1] = pref[i] + a[i];
+    }
+    
+    long long max_val = -1e18;
+    for (int cr = 0; cr <= n; ++cr) {
+        long long cb = n - cr;
+        long long sr = pref[cr];
+        long long sb = total_sum - sr;
+        long long current_val = sr * cb + sb * cr;
+        max_val = max(max_val, current_val);
+    }
+    cout << max_val << "\n";
 }
-
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
 ```
 
 ---
