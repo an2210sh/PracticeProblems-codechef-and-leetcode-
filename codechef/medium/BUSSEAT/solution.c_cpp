@@ -8,9 +8,9 @@ int main() {
 	    int n,k;
 	    cin>>n>>k;
 	    if(k>n)
-	    cout<<2*n-k;
+	    cout<<2*(k%n);
 	    else
-	    cout<<k;
+	    cout<<0;
 	    cout<<endl;
 	}
 
