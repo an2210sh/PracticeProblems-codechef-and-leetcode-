@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	char s[4];
+	for(int i=0;i<4;i++)
+	cin>>s[i];
+	
+if(s[0]==s[2] && s[1]==s[3])
+cout<<"yes";
+else
+cout<<"no";
+
+}
